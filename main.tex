@@ -5,6 +5,10 @@
 \usepackage{graphicx}
 \usepackage[normalem]{ulem}
 \usepackage{amssymb}
+\usepackage{pgfpages}
+
+\setbeameroption{show notes on second screen=right}
+\setbeamertemplate{note page}{\insertnote}
 
 %%% Headline template
 \setbeamertemplate{headline}
@@ -83,7 +87,7 @@
     \begin{itemize}
         \item \textbf{How can we aggregate individual preferences into a collective, \uline{rational} social choice?}
         \begin{itemize}
-            \item[$\Rightarrow$] We need to define a \textbf{social welfare function}
+            \item[$\Rightarrow$] We need to define a \textbf{\uline{social welfare function}}
         \end{itemize}
         \vspace{0.25 cm}
         \item Traditional democratic methods, often fail..
@@ -116,6 +120,15 @@
             \item C is preferred over A $\rightarrow$ \textbf{Paradox}
         \end{itemize}
     \end{itemize}
+
+    \note{
+        \vfill
+        \begin{center}
+            disarmament, cold war, hot war
+        \end{center}
+        \vfill
+    }
+    
 \end{frame}
 
 \begin{frame}{Welfare economics}
@@ -136,6 +149,16 @@
             \end{enumerate}
         \end{itemize}
     \end{itemize}
+
+    \note{
+        \vfill
+        \begin{center}
+            - Pareto optimum: we cant make an individual condition better without worsening the one of someone else. \\
+            -This assumes the status quo is perfect (confining options to a smaller suboptimal set otherwise) \\
+            -In the end there is no choice of actions since no distribution can be choose over the others.
+        \end{center}
+        \vfill
+    }
 \end{frame}
 
 
@@ -146,14 +169,33 @@
         \item \textbf{Paradox:} It is possible that \textit{x} is preferred over \textit{y} and vice versa.
         \item Even without the paradox occurring \uline{it fails to produce a linear ordering of social choices.}
     \end{itemize}
+
+    \note{
+        \vfill
+        \begin{center}
+            - Nicholas Kaldor proposed this \\
+            - Professor Tibor Scitovszky criticized this
+            - Since the whole system is mathematically faulty
+        \end{center}
+        \vfill
+    }
+    
 \end{frame}
 
 \begin{frame}{A general problem}
-        The aim of the paper is to show that the difficulties seen in voting and economics are general:
-        \begin{itemize}
-            \item For any methods of deriving social choices by aggregating individual preference patterns $\rightarrow$ it is possible to find individual preference patterns that create a social choice which does not have a linear ordering.
-            \item It is assumed that each individual behaves rationally $\rightarrow$ his behavior can be described by an indifference map.
-        \end{itemize}
+    The aim of the paper is to show that the difficulties seen in voting and economics are general:
+    \begin{itemize}
+        \item For any methods of deriving social choices by aggregating individual preference patterns $\rightarrow$ it is possible to find individual preference patterns that create a social choice which does not have a linear ordering.
+        \item It is assumed that each individual behaves rationally $\rightarrow$ his behavior can be described by an indifference map.
+    \end{itemize}
+    \note{
+        \vfill
+        \begin{center}
+            - Spoiler
+        \end{center}
+        \vfill
+    }
+        
 \end{frame}
 
 %%%%-------------------------------------------------------------------------
@@ -204,6 +246,15 @@
             \item Along with Axiom I, it guaranties weak ordering.
         \end{itemize}
     \end{itemize}
+
+    \note{
+        \vfill
+        \begin{center}
+            - Axiom I states that is always possible to compare 2 alternatives
+        \end{center}
+        \vfill
+    }
+    
 \end{frame}
 
 \begin{frame}{Definition I, II}
@@ -227,8 +278,16 @@
                 \item \textbf{e:} For all \textit{x} and \textit{y}, either \textit{xRy} or \textit{yPx}.
                 \item \textbf{f:} If \textit{xPy} and \textit{yRz}, then \textit{xPz}.
             \end{itemize}
-            
         \end{itemize}
+
+    \note{
+        \vfill
+        \begin{center}
+            - Skip the 6 lemmas, only put here for completeness
+        \end{center}
+        \vfill
+    }
+    
 \end{frame}
 
 \begin{frame}{The Mechanics of Rational Choice}
@@ -259,6 +318,14 @@
         \end{itemize}
         \item Each citizen has a definite ordering of all conceivable social states which they can order by whatever standards they deem relevant.
     \end{itemize}
+    \note{
+        \vfill
+        \begin{center}
+            - Intro to the next slide what actually we want to order?
+        \end{center}
+        \vfill
+    }
+    
 \end{frame}
 
 \begin{frame}{Tastes vs Values}
@@ -271,6 +338,15 @@
             \item[$\Rightarrow$] Deciding whether a specific preference is relevant to society or simply "none of one's business" is, in itself, a value judgment. Thus, society must consider the entire system of values.
         \end{itemize}
     \end{itemize}
+
+    \note{
+        \vfill
+        \begin{center}
+            - ut 
+        \end{center}
+        \vfill
+    }
+    
 \end{frame}
 
 \begin{frame}{Notation for social states}
@@ -332,13 +408,15 @@
         \item \textbf{2 individuals} $\rightarrow$ \textit{\{1, 2\}}
         \begin{itemize}
             \item Better than 3
-            \item Results will still hold for any numer of individual
             \item Way simpler proof
         \end{itemize}
         \vspace{0.25 cm}
         \item \textbf{3 alternatives} $\rightarrow$ \textit{\{x, y, z\}}
         \vspace{0.25 cm}
-        \item  Since the final theorem proves an \textit{impossibility}, if the system fails in this minimal scenario, it will inevitably fail for larger populations and more alternatives.
+        \item Results will still hold for any numer of individual
+        \begin{itemize}
+            \item[$\Rightarrow$]  Since the final theorem proves an \textit{impossibility}, if the system fails in this minimal scenario, it will inevitably fail for larger populations and more alternatives.
+        \end{itemize}
     \end{itemize}
 \end{frame}
 
@@ -472,7 +550,8 @@
         \item \textbf{Definition:} If $x'P_1y'$ and $x'P_2y'$, then $x'Py'$.
         \item[$\Rightarrow$] If both individuals strictly prefer $x'$ to $y'$, then society must strictly prefer $x'$ to $y'$.
         \vspace{0.25 cm}
-        \item \textbf{Proof:} By Condition 4 (Citizens' Sovereignty), society is allowed to prefer $x'$ to $y'$ in at least one hypothetical scenario. If we take that scenario and raise $x'$ to the very top of both individuals' rankings, Condition 2 (Positive Association) dictates that society must still prefer $x'$ to $y'$. Because of Condition 3 (Independence of Irrelevant Alternatives), the choice between $x'$ and $y'$ depends only on their relative rankings, so this social preference holds \textit{whenever} both individuals agree on $x'$ over $y'$.
+        \item \textbf{Proof:} By Condition 4, society is allowed to prefer $x'$ to $y'$ in at least one hypothetical scenario ($R_1'$, $R_2'$). If we take that scenario and raise $x'$ to the very top of both individuals' rankings ($R_1''$, $R_2''$), Condition 2 dictates that society must still prefer $x'$ to $y'$. Because of Condition 3, the choice between $x'$ and $y'$ depends only on their relative rankings, so this social preference holds \textit{whenever} both individuals agree on $x'$ over $y'$.
+
     \end{itemize}
 \end{frame}
 
@@ -547,7 +626,112 @@
 %%%%-------------------------------------------------------------------------
 \subsection{Implications for Social Welfare Judgments}
 
-\begin{frame}{Frame Title}
+\begin{frame}{Interpretation of the Theorem}
+
+    \begin{itemize}
+        \item Conditions 1 and 3 together exclude any \uline{interpersonal comparison of social utility}.
+        \begin{itemize}
+            \item[$\Rightarrow$] System inevitably break down, since it can only process rankings and cannot weigh the intensity of human feelings.
+        \end{itemize}
+        \vspace{0.5 cm}
+        \item \textbf{Arrow then restate the conclusion as:}
+        \begin{quote}
+            ``If we exclude the possibility of interpersonal comparisons of utility, then the only methods of passing from individual tastes to social preferences which will be satisfactory [...] are either imposed or dictatorial''.
+        \end{quote}
+        \begin{itemize}
+            \item[$\Rightarrow$] ``The doctrine of voters' sovereignty is incompatible with that of collective rationality''
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Interpretation of the Theorem}
+    \textbf{How to move on?}
+    \vspace{0.25 cm}
+    \begin{itemize}
+        \item \textbf{Relaxing the Conditions:} If we want a system that is neither imposed nor dictatorial, Arrow concludes that we must relax some of our initial rules.
+        \vspace{0.5 cm}
+        \item \textbf{Restricting Individual Values:} Since we still cannot magically measure interpersonal utility, the only way out is to abandon the requirement that the system works for a \textit{wide range of individual orderings}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Reflections on the New Welfare Economics}
+
+    \textbf{New Welfare Economics} focuses on finding maximal states, (Pareto optimum), based purely on individualistic assumptions.
+    \begin{itemize}
+        \item[$\Rightarrow$] Mathematically proven faulty by Arrow
+    \end{itemize}
+    \vspace{0.5 cm}
+    \textbf{Need of Welfare Economics:} 
+    \begin{itemize}
+        \item However, if we add further ethical restrictions to the individualistic ones, the true social optimum will still be found among those individualistic maximal states.
+        \begin{itemize}
+            \item[$\Rightarrow$] Traditional welfare economics still can be used to restrict the range in which society must look for the ultimate social maximum.
+        \end{itemize}
+    \end{itemize}     
+\end{frame}
+
+\begin{frame}{The Necessity of shared Ethical Norms}
+    The mathematical failure of pure individualism proves that \uline{there must be a divergence between private desires and collective social benefits}.\\
+    \vspace{0.5 cm}
+    \textbf{The Ethical addition:} $\rightarrow$ Values
+    \begin{itemize}
+        \item To make a rational social choice possible, society must incorporate a scheme of \textbf{socio-ethical norms}, which \uline{must be sufficiently similar among members of society} $\rightarrow$ (Impossibility otherwise). 
+        \vspace{0.25 cm}
+        \item[$\Rightarrow$] A democratic machine \uline{capable of collective rationality} can only function without collapsing into contradiction or dictatorship if its citizens hold socio-ethical norms that are \textbf{``sufficiently similar''}.  
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{A One-Commodity World}
+
+\textbf{What if, in the world, there exists only one commodity?}
+
+    \begin{itemize}
+        \item If we keep considering (1), (2) of Part IV any individual have only one possible ordering of the social states.
+        \begin{itemize}
+            \item[$\Rightarrow$] Conditions 2, 3, and 4 irrelevant, Condition 5 is weaker.
+        \end{itemize}
+        \item \textbf{Arbitrary Weak Ordering:} Any specification of a social ordering which does not coincide completely with the ordering of any one individual will be a social welfare function compatible with all the conditions.
+        \item \textbf{Difficulty in a multi-commodity world:} We cannot compare the total production in two different social states without a standard of value (e.g. prices). Since this standard is dependent on the distribution of income, the total output inherently relies on ethical judgments.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Distributional Ethics combined with Individualism}
+    \textbf{A Proposed Ethical Schema:} Some economists attempt to solve economic problems by assuming two \uline{value judgments}:
+    \begin{enumerate}
+        \item If everybody is better off according to their own \textit{tastes}, society prefers that state.
+        \item There is a universally accepted ordering of different welfare distributions (usually egalitarian).
+    \end{enumerate}
+    \vspace{0.25 cm}
+    \begin{itemize}
+        \item This approach requires a sharp distinction between Values and Tastes: 
+        \begin{itemize}
+            \vspace{-0.25 cm}
+            \item[$\Rightarrow$] All individuals are assumed to share the same \textit{values} regarding equitable distribution, while having, totally opposite, purely individualistic \textit{tastes}.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Failure of Individualistic Ethics}
+    \framesubtitle{The Bergson SWF}
+
+    \begin{itemize}
+        \item \textbf{The Bergson social welfare function:} \\
+        Assigns a social ordering to each possible set of individual orderings representing purely personal tastes, which since are individualistic is mathematically isomorphic to the Possibility Theorem, \textit{since it was based on individualistic assumptions (1), (2) of Part IV.}
+        \vspace{0.5 cm}
+        \item \textbf{The Conclusion:}
+        \begin{quote}
+            ``Essentially, the two value judgments amount to erecting individualistic behavior into a value judgment. It is not surprising, then, that such ethics can be no more successful than the actual practice of individualism.''
+        \end{quote}
+    \end{itemize}
+
+    \note{
+        \vfill
+        \begin{center}
+            What they were trying to do is basically masking the individualistic assumptions by saying we will make it work
+        \end{center}
+        \vfill
+    }
     
 \end{frame}
+
 \end{document}
